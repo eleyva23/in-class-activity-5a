@@ -18,23 +18,34 @@ const cart = [
 const customerType = "member";
 
 // Task 1 
-function getcatDis (category) {
+function getCategorytDiscount(category){
     switch (category) {
         case "gear":
             return .1
-            break
+            break;
         case "apparel":
             return .15
-            break
+            break;
         case "snacks":
             return .08
-            break
+            break;
         case "access":
             return .05
-            break
+            break;
         default:
             return 0
             break;
     }
 }
+console.log(getCategorytDiscount("gear"))
+// Task 2
+function priceAfterCategoryDiscount (products) {
+let rate= getCategorytDiscount(products.category);
+return products.price * (1-rate);
+}
+ 
+// Task 3
+
+
+
 
