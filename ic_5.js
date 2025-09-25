@@ -45,6 +45,18 @@ return products.price * (1-rate);
 }
  
 // Task 3
+function findProductByID(id) {
+    for (let p of products) {
+        if (p.id === id)
+            return p;
+    }
+    return null; // null not found 
+}
+console.log(findProductByID(201))
+// Task 4 line 
+function lineItemTotal (item, products) {
+    const product= findProductByID(item.product)
+}
 
 
 
