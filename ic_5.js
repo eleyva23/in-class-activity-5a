@@ -16,3 +16,25 @@ const cart = [
 
 // Try: "regular", "student", "member", or "vip"
 const customerType = "member";
+
+// Task 1 
+function getcatDis (category) {
+    switch (category) {
+        case "gear":
+            return .1
+            break
+        case "apparel":
+            return .15
+            break
+        case "snacks":
+            return .08
+            break
+        case "access":
+            return .05
+            break
+        default:
+            return 0
+            break;
+    }
+}
+
